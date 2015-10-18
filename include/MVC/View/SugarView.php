@@ -1283,7 +1283,7 @@ EOHTML;
 			$params = array_reverse($params);
 		}
 		if(count($params) > 1) {
-			array_shift($params);
+			//array_shift($params); //BUG this array_shift's the module icon image; including it is better for the UI; excluding it like this is dumb
 		}
 		$count = count($params);
         $paramString = '';
